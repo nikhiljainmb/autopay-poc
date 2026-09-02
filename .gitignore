@@ -1,0 +1,22 @@
+# Build output
+**/bin/
+**/obj/
+
+# Embedded Postgres runtime data (generated locally)
+**/pg_embed/
+
+# IDE / OS
+.vs/
+.vscode/
+*.user
+*.suo
+Thumbs.db
+.DS_Store
+
+# Secrets
+.env
+.env.*
+*.pem
+*.pfx
+credentials.json
+secrets.json

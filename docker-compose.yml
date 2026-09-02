@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: autopay-poc-pg
+    environment:
+      POSTGRES_USER: autopay
+      POSTGRES_PASSWORD: autopay
+      POSTGRES_DB: autopay
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
